@@ -11,3 +11,7 @@
     2. Não utilizar else
         - Early return
         - Fail fast
+3. Enriquecendo o domínio
+    1. Evitar o exagero no uso de tipos primitivos
+        - Obsseção por tipos primitivos
+        - Tipos primitivos não carregam um significado para o domínio

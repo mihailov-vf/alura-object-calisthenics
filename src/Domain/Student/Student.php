@@ -8,7 +8,7 @@ use Ds\Map;
 
 class Student
 {
-    private string $email;
+    private Email $email;
     private DateTimeInterface $bd;
     private Map $watchedVideos;
     private string $fName;
@@ -20,10 +20,10 @@ class Student
     public string $state;
     public string $country;
 
-    public function __construct(string $email, DateTimeInterface $bd, string $fName, string $lName, string $street, string $number, string $province, string $city, string $state, string $country)
+    public function __construct(Email $email, DateTimeInterface $bd, string $fName, string $lName, string $street, string $number, string $province, string $city, string $state, string $country)
     {
         $this->watchedVideos = new Map();
-        $this->setEmail($email);
+        $this->email = $email;
         $this->bd = $bd;
         $this->fName = $fName;
         $this->lName = $lName;
@@ -38,15 +38,6 @@ class Student
     public function getFullName(): string
     {
         return "{$this->fName} {$this->lName}";
-    }
-
-    private function setEmail(string $email)
-    {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
-            $this->email = $email;
-        } else {
-            throw new \InvalidArgumentException('Invalid e-mail address');
-        }
     }
 
     public function getEmail(): string
