@@ -15,3 +15,8 @@
     1. Evitar o exagero no uso de tipos primitivos
         - Obsseção por tipos primitivos
         - Tipos primitivos não carregam um significado para o domínio
+    2. Coleções de primeira classe
+        - Interações com detalhes de uma collection devem ser feitas por uma classe que encapsule a collection
+        - [dont-use-collection-directly](https://javascript.plainenglish.io/dont-use-collection-directly-93a5457a8e40)
+        - [example-of-the-object-calisthenics-first-class-collection-rule](https://stackoverflow.com/questions/53535573/example-of-the-object-calisthenics-first-class-collection-rule-in-c)
+
