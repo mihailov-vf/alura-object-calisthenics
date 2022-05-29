@@ -26,3 +26,7 @@
     2. Não abrevie
         - Nomes muito grandes indicam possivelmente mais de uma responsabilidade
         - Abreviações por praticidade de repetição na escrita indicam necessidade de revisão no encapsulamento
+5. Mantendo a coesão
+    1. Mantenha as classes (apróx. 50 linhas) e pacotes pequenos (apróx. 10 classes)
+    2. Agrupando detalhes (Extraindo propriedades para classes de valor)
+        - Mantenha as classes com n propriedades: objetivo estabelecido pelo designer no projeto
