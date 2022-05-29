@@ -5,6 +5,7 @@ namespace Alura\Calisthenics\Tests\Unit\Domain\Video;
 use Alura\Calisthenics\Domain\Student\Student;
 use Alura\Calisthenics\Domain\Video\InMemoryVideoRepository;
 use Alura\Calisthenics\Domain\Video\Video;
+use PHPUnit\Framework\MockObject\Stub;
 use PHPUnit\Framework\TestCase;
 
 class InMemoryVideoRepositoryTest extends TestCase
@@ -20,8 +21,9 @@ class InMemoryVideoRepositoryTest extends TestCase
             $repository->add($video);
         }
 
+        /** @var Stub&Student */
         $student = $this->createStub(Student::class);
-        $student->method('getBd')->willReturn(new \DateTimeImmutable('-19 years'));
+        $student->method('age')->willReturn(19);
 
         $videoList = $repository->videosFor($student);
 

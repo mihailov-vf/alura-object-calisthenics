@@ -19,4 +19,10 @@
         - Interações com detalhes de uma collection devem ser feitas por uma classe que encapsule a collection
         - [dont-use-collection-directly](https://javascript.plainenglish.io/dont-use-collection-directly-93a5457a8e40)
         - [example-of-the-object-calisthenics-first-class-collection-rule](https://stackoverflow.com/questions/53535573/example-of-the-object-calisthenics-first-class-collection-rule-in-c)
-
+4. Mantendo a legibilidade
+    1. Um ponto (operador de acesso de objetos) por linha (instrução)
+        - Ao evitar de acessar métodos e estruturas internas em um objeto, garantimos o encapsulamento
+        - Reforça a aplicação da Lei de Demeter
+    2. Não abrevie
+        - Nomes muito grandes indicam possivelmente mais de uma responsabilidade
+        - Abreviações por praticidade de repetição na escrita indicam necessidade de revisão no encapsulamento
